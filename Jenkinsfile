@@ -9,7 +9,7 @@ pipeline{
     }
         stage('build'){
             steps{
-                sh 'docker build -t nodejs-project:${BUILDNUMBER} .'
+                sh 'docker build -t nodejs-project:${BUILD_NUMBER} .'
             }
         }
         stage('run'){
